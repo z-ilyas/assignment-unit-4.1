@@ -8,6 +8,7 @@ console.log('***** Function Practice *****')
 function hello() {
   return 'Hello World!';
 }
+
 // Call the function to test
 console.log('Test - should say "Hello World!"', hello());
 
@@ -15,30 +16,38 @@ console.log('Test - should say "Hello World!"', hello());
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName( name ) {
-  return;
-}
+  let personalizedHello = 'Hello, Ilyas!'
+  return personalizedHello;
+  }
 // Remember to call the function to test
-
+console.log('Personalized hello:',helloName());
 
 // 3. Function to add two numbers together & return the result
-function addNumbers( firstNumber ) {
+function addNumbers( firstNumber, secondNumber) {
   // return firstNumber + secondNumber;
+  console.log('In addNumbers:', firstNumber , secondNumber);
+  return firstNumber + secondNumber;
 }
-
+console.log('Running addnumbers with 0.9 & 2.5:', addNumbers(0.9,2.5));
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
-
+function multiplyThree(firstNumber, secondNumber, thirdNumber ){
+  console.log('In multiplyThree', firstNumber, secondNumber, thirdNumber );
+  return firstNumber * secondNumber * thirdNumber;
+  
 }
+console.log('Running multiplyThree with 10 & 15 & 25:', multiplyThree(10,15,25));
 
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 function isPositive( number ) {
   if ( number > 0 ){
-    return;
+    return true;
   }
-    return;
+  else{
+    return false;
+}
 }
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
@@ -57,7 +66,14 @@ function getLast( array ) {
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find( value, array ){
-  
+  for (let i = 0; i < i.length; i++) {
+    if (value === array[i]){
+      return true;
+    }
+    else{
+      return false;
+    }
+  }
 }
 
 // ----------------------
@@ -65,9 +81,17 @@ function find( value, array ){
 // ----------------------
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
-function isFirstLetter(letter, string) {
+function isFirstLetter(letter, string){
+if(letter === 'a'){
+  return true;
+}
+else{
+  return false;
+}
 
 }
+
+
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
