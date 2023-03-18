@@ -6,9 +6,9 @@ console.log('***** Function Practice *****')
 
 // 1. Function to return 'Hello World!'
 function hello() {
+  console.log('Hello World!');
   return 'Hello World!';
 }
-
 // Call the function to test
 console.log('Test - should say "Hello World!"', hello());
 
@@ -32,7 +32,7 @@ console.log('Running addnumbers with 0.9 & 2.5:', addNumbers(0.9,2.5));
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree(firstNumber, secondNumber, thirdNumber ){
-  console.log('In multiplyThree', firstNumber, secondNumber, thirdNumber );
+  console.log('In multiplyThree:', firstNumber , secondNumber, thirdNumber);
   return firstNumber * secondNumber * thirdNumber;
   
 }
@@ -59,8 +59,10 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
 function getLast( array ) {
-
+getLast = [5,6,7,9];
+return 
 }
+console.log('The last Item in the Array:',);
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
