@@ -73,17 +73,17 @@ function getLast( arrays ) {
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find( value, array ){
-  for (let i = 0; i < i.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     if (value === array[i]){
       return true;
     }
-    else{
+  }
       return false;
     }
-  }
-}
-console.log('finding the value in array - should say true', find([10, 50, 66]));
-console.log('finding the value in array - should say false', find([]) );
+
+console.log('finding the value in array - should say true', find(50, [10, 50, 66]));
+console.log('finding the value in array - should say false', find(99, [10, 50, 66]));
+
 // ----------------------
 // Stretch Goals
 // ----------------------
