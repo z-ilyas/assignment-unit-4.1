@@ -82,7 +82,8 @@ function find( value, array ){
     }
   }
 }
-
+console.log('finding the value in array - should say true', find([10, 50, 66]));
+console.log('finding the value in array - should say false', find([]) );
 // ----------------------
 // Stretch Goals
 // ----------------------
