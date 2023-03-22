@@ -16,11 +16,11 @@ console.log('Test - should say "Hello World!"', hello());
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName( name ) {
-  let personalizedHello = 'Hello, Ilyas!'
-  return personalizedHello;
-  }
+  return `Hello, ${name}!`;
+}
+
 // Remember to call the function to test
-console.log('Personalized hello:',helloName());
+console.log(helloName('Ilyas'));
 
 // 3. Function to add two numbers together & return the result
 function addNumbers( firstNumber, secondNumber) {
@@ -93,7 +93,7 @@ function isFirstLetter(letter, string){
 if(letter === 'a'){
   return true;
 }
-else{
+if(string === 'z'){
   return false;
 }
 
